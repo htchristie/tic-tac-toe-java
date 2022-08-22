@@ -1,8 +1,12 @@
 package application;
 
 import board.Board;
+import game.GamePosition;
 import game.PlayerSymbol;
 import game.Type;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class UI {
 
@@ -43,6 +47,20 @@ public class UI {
             System.out.println();
         }
         System.out.println("  a b c");
+    }
+
+    // lê a posição passada pelo jogador
+    public static GamePosition readGamePosition(Scanner scan) {
+        try {
+            String s = scan.nextLine();
+            char column = s.charAt(0);
+            int row = Integer.parseInt(s.substring(1));
+
+            return new GamePosition(column, row);
+        }
+        catch (RuntimeException e) {
+            throw new InputMismatchException("Invalid position: valid values range from a1 to c3.");
+        }
     }
 
 

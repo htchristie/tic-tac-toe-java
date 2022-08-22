@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="toString method to print symbols on board">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="symbols are printed with color on console">
       <change beforePath="$PROJECT_DIR$/src/application/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661174912785</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="symbols are printed with color on console">
+      <created>1661176303120</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1661176303120</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +203,7 @@
     <MESSAGE value="GamePosition class" />
     <MESSAGE value="placeNewSymbol and test methods" />
     <MESSAGE value="toString method to print symbols on board" />
-    <option name="LAST_COMMIT_MESSAGE" value="toString method to print symbols on board" />
+    <MESSAGE value="symbols are printed with color on console" />
+    <option name="LAST_COMMIT_MESSAGE" value="symbols are printed with color on console" />
   </component>
 </project>
