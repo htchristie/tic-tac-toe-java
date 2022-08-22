@@ -18,11 +18,11 @@ public class Program {
         while (true) {
             try {
                 UI.clearScreen();
-                UI.printBoard(match.getSymbols());
+                UI.printMatch(match);
                 System.out.println();
                 System.out.print("Campo: ");
                 GamePosition position = UI.readGamePosition(scan);
-                match.placeNewSymbol(position, new PlayerSymbol(match.getBoard(), Type.O));
+                match.placeNewSymbol(position);
             }
             catch (GameException e) {
                 System.out.println(e.getMessage());

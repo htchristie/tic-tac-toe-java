@@ -5,15 +5,21 @@ import board.Position;
 
 public class Match {
     private Board board;
+    private Type currentPlayer;
 
     // inicia partida com um tabuleiro 3x3
     public Match() {
         this.board = new Board(3, 3);
+        currentPlayer = Type.X;
         //test();
     }
 
     public Board getBoard() {
         return board;
+    }
+
+    public Type getCurrentPlayer() {
+        return currentPlayer;
     }
 
     public PlayerSymbol[][] getSymbols() {
@@ -32,9 +38,15 @@ public class Match {
     }
 
     // coloca o símbolo no tabuleiro, na posição de jogo passada pelo jogador
-    public void placeNewSymbol(GamePosition position, PlayerSymbol symbol) {
+    public void placeNewSymbol(GamePosition position) {
+        PlayerSymbol symbol = new PlayerSymbol(this.board, currentPlayer);
         Position field = position.toPosition();
         board.placeSymbol(symbol, field);
+        nextTurn();
+    }
+
+    private void nextTurn() {
+        currentPlayer = (currentPlayer == Type.O) ? Type.X : Type.O;
     }
 
     /*public void test() {

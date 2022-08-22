@@ -2,6 +2,7 @@ package application;
 
 import board.Board;
 import game.GamePosition;
+import game.Match;
 import game.PlayerSymbol;
 import game.Type;
 
@@ -47,6 +48,13 @@ public class UI {
             System.out.println();
         }
         System.out.println("  a b c");
+    }
+
+    // imprime a partida no console
+    public static void printMatch(Match match) {
+        printBoard(match.getSymbols());
+        System.out.println();
+        System.out.println("Current player: " + match.getCurrentPlayer());
     }
 
     // lê a posição passada pelo jogador
