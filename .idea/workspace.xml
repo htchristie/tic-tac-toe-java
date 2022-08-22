@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="placeSymbol method" />
+    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="add comments">
+      <change beforePath="$PROJECT_DIR$/src/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Board.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661136646076</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="custom BoardException">
+      <created>1661136864139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661136864139</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add comments">
+      <created>1661136946176</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661136946176</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +145,8 @@
     <MESSAGE value="type enum, symbol &amp; playerSymbol classes" />
     <MESSAGE value="board, match &amp; UI classes" />
     <MESSAGE value="placeSymbol method" />
-    <option name="LAST_COMMIT_MESSAGE" value="placeSymbol method" />
+    <MESSAGE value="custom BoardException" />
+    <MESSAGE value="add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments" />
   </component>
 </project>

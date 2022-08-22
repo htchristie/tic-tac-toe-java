@@ -42,4 +42,19 @@ public class Board {
         symbols[position.getRow()][position.getColumn()] = symbol;
         symbol.position = position;
     }
+
+    // checa se a posição [row][column] existe no tabuleiro
+    private boolean positionExists(int row, int column) {
+        return row >= 0 && row < rows && column >= 0 && column < columns;
+    }
+
+    // checa se a posição position existe no tabuleiro
+    public boolean positionExists(Position position) {
+        return positionExists(position.getRow(), position.getColumn());
+    }
+
+    // checa se a casa na posição position está ocupada
+    public boolean isThereASymbol(Position position) {
+        return findSymbol(position) != null;
+    }
 }
