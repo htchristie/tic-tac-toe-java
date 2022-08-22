@@ -2,8 +2,11 @@ package application;
 
 import board.Board;
 import game.PlayerSymbol;
+import game.Type;
 
 public class UI {
+
+    // https://stackoverflow.com/questions/5762491/how-to-print-color-in-console-using-system-out-println
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_CYAN = "\u001B[36m";
@@ -18,7 +21,14 @@ public class UI {
         if (symbol == null) {
             System.out.print("-");
         } else {
-            System.out.print(symbol);
+            if (symbol.getType() == Type.O) {
+                // imprime símbolo O na cor ciano
+                System.out.print(ANSI_CYAN + symbol + ANSI_RESET);
+            }
+            else {
+                // imprime símbolo X na cor roxa
+                System.out.print(ANSI_PURPLE + symbol + ANSI_RESET);
+            }
         }
         System.out.print(" ");
     }

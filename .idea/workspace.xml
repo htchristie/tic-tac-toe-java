@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="custom exception GameException">
-      <change afterPath="$PROJECT_DIR$/src/game/GamePosition.java" afterDir="false" />
+    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="toString method to print symbols on board">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/PlayerSymbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/PlayerSymbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +146,28 @@
       <option name="project" value="LOCAL" />
       <updated>1661171994256</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="GamePosition class">
+      <created>1661174860797</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661174860797</updated>
+    </task>
+    <task id="LOCAL-00013" summary="placeNewSymbol and test methods">
+      <created>1661174891316</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661174891316</updated>
+    </task>
+    <task id="LOCAL-00014" summary="toString method to print symbols on board">
+      <created>1661174912785</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661174912785</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +194,9 @@
     <MESSAGE value="positionExists and isThereASymbol methods" />
     <MESSAGE value="defensive programming" />
     <MESSAGE value="custom exception GameException" />
-    <option name="LAST_COMMIT_MESSAGE" value="custom exception GameException" />
+    <MESSAGE value="GamePosition class" />
+    <MESSAGE value="placeNewSymbol and test methods" />
+    <MESSAGE value="toString method to print symbols on board" />
+    <option name="LAST_COMMIT_MESSAGE" value="toString method to print symbols on board" />
   </component>
 </project>

@@ -29,5 +29,7 @@ public class Match {
     public void test() {
         placeNewSymbol('a', 2, new PlayerSymbol(this.board, Type.O));
         placeNewSymbol('b', 2, new PlayerSymbol(this.board, Type.X));
+        placeNewSymbol('c', 2, new PlayerSymbol(this.board, Type.O));
+        placeNewSymbol('c', 1, new PlayerSymbol(this.board, Type.X));
     }
 }
