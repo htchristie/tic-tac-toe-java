@@ -36,4 +36,10 @@ public class Board {
     public Symbol findSymbol(Position position) {
         return symbols[position.getRow()][position.getColumn()];
     }
+
+    // insere símbolo no array symbols[][] e define a posição do símbolo passado
+    public void placeSymbol(Symbol symbol, Position position) {
+        symbols[position.getRow()][position.getColumn()] = symbol;
+        symbol.position = position;
+    }
 }

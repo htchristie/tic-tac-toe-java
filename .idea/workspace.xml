@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="board class">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/board/Symbol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Match.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/PlayerSymbol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Type.java" afterDir="false" />
+    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="board, match &amp; UI classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Board.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +41,26 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.Program" />
+      <module name="tic-tact-toe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Program" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661133752309</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="type enum, symbol &amp; playerSymbol classes">
+      <created>1661136091609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661136091609</updated>
+    </task>
+    <task id="LOCAL-00005" summary="board, match &amp; UI classes">
+      <created>1661136110959</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661136110959</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +123,8 @@
     <MESSAGE value="initial files" />
     <MESSAGE value="position class" />
     <MESSAGE value="board class" />
-    <option name="LAST_COMMIT_MESSAGE" value="board class" />
+    <MESSAGE value="type enum, symbol &amp; playerSymbol classes" />
+    <MESSAGE value="board, match &amp; UI classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="board, match &amp; UI classes" />
   </component>
 </project>

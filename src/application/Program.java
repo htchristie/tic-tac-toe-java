@@ -1,12 +1,13 @@
 package application;
 
+import game.Match;
+
 import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-
-
+        Match match = new Match();
+        UI.printBoard(match.getSymbols());
     }
 }
