@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="add comments">
+    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="positionExists and isThereASymbol methods">
       <change beforePath="$PROJECT_DIR$/src/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Board.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661136946176</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="positionExists and isThereASymbol methods">
+      <created>1661137174741</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661137174741</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +154,8 @@
     <MESSAGE value="placeSymbol method" />
     <MESSAGE value="custom BoardException" />
     <MESSAGE value="add comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="add comments" />
+    <MESSAGE value="positionExists and isThereAPiece methods" />
+    <MESSAGE value="positionExists and isThereASymbol methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="positionExists and isThereASymbol methods" />
   </component>
 </project>
