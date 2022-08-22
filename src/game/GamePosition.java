@@ -33,7 +33,7 @@ public class GamePosition {
 
     // transforma posição de matriz em posição do tabuleiro
     protected static GamePosition fromPosition(Position position) {
-        return new GamePosition((char) ('a' - position.getColumn()), 8 - position.getRow());
+        return new GamePosition((char) ('a' + position.getColumn()), 8 - position.getRow());
     }
 
     @Override
