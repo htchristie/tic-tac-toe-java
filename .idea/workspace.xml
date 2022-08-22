@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="positionExists and isThereASymbol methods">
-      <change beforePath="$PROJECT_DIR$/src/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/board/Board.java" afterDir="false" />
-    </list>
+    <list default="true" id="a6ac08ea-8fde-4330-b3fc-913b66dd9f6d" name="Changes" comment="defensive programming" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661137174741</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="defensive programming">
+      <created>1661137556699</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661137556699</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +161,7 @@
     <MESSAGE value="add comments" />
     <MESSAGE value="positionExists and isThereAPiece methods" />
     <MESSAGE value="positionExists and isThereASymbol methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="positionExists and isThereASymbol methods" />
+    <MESSAGE value="defensive programming" />
+    <option name="LAST_COMMIT_MESSAGE" value="defensive programming" />
   </component>
 </project>
