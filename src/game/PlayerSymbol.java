@@ -14,5 +14,14 @@ public class PlayerSymbol extends Symbol {
     public Type getType() {
         return type;
     }
+
+    @Override
+    public String toString() {
+        if (type == Type.O) {
+            return "◯";
+        } else {
+            return "X";
+        }
+    }
 }
 
