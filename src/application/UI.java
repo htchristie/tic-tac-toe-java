@@ -54,7 +54,16 @@ public class UI {
     public static void printMatch(Match match) {
         printBoard(match.getSymbols());
         System.out.println();
-        System.out.println("Current player: " + match.getCurrentPlayer());
+
+        if (!match.checkDraw()) {
+            System.out.println("Current player: " + match.getCurrentPlayer());
+            if (match.checkWin()) {
+                System.out.println("PLAYER " + match.getCurrentPlayer() + " WINS!");
+            }
+        } else {
+            System.out.println("DRAW!");
+            System.out.println("There are no moves left.");
+        }
     }
 
     // lê a posição passada pelo jogador

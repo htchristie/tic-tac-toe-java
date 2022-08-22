@@ -6,6 +6,8 @@ import board.Position;
 public class Match {
     private Board board;
     private Type currentPlayer;
+    private boolean win;
+    private boolean draw;
 
     // inicia partida com um tabuleiro 3x3
     public Match() {
@@ -22,6 +24,15 @@ public class Match {
         return currentPlayer;
     }
 
+    public boolean isWin() {
+        return win;
+    }
+
+    public boolean isDraw() {
+        return draw;
+    }
+
+    // array do tabuleiro passando as posições já preenchidas
     public PlayerSymbol[][] getSymbols() {
         PlayerSymbol[][] mat = new PlayerSymbol[board.getRows()][board.getColumns()];
         for (int i = 0; i < board.getRows(); i++) {
@@ -42,11 +53,34 @@ public class Match {
         PlayerSymbol symbol = new PlayerSymbol(this.board, currentPlayer);
         Position field = position.toPosition();
         board.placeSymbol(symbol, field);
-        nextTurn();
+
+        if (checkWin()) {
+            win = true;
+        } else if (checkDraw()) {
+            draw = true;
+        } else {
+            nextTurn();
+        }
     }
 
+    // muda de jogador
     private void nextTurn() {
         currentPlayer = (currentPlayer == Type.O) ? Type.X : Type.O;
+    }
+
+    public boolean checkWin() {
+        return false;
+    }
+
+    public boolean checkDraw() {
+        for (int i = 0; i < board.getRows(); i++) {
+            for (int j = 0; j < board.getColumns(); j++) {
+                if (board.findSymbol(i, j) == null) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     /*public void test() {

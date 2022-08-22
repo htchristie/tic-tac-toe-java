@@ -3,8 +3,6 @@ package application;
 import exceptions.GameException;
 import game.GamePosition;
 import game.Match;
-import game.PlayerSymbol;
-import game.Type;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -15,7 +13,7 @@ public class Program {
         Scanner scan = new Scanner(System.in);
         Match match = new Match();
 
-        while (true) {
+        while (!match.isDraw() && !match.isWin()) {
             try {
                 UI.clearScreen();
                 UI.printMatch(match);
@@ -23,6 +21,7 @@ public class Program {
                 System.out.print("Campo: ");
                 GamePosition position = UI.readGamePosition(scan);
                 match.placeNewSymbol(position);
+                System.out.println();
             }
             catch (GameException e) {
                 System.out.println(e.getMessage());
@@ -33,5 +32,7 @@ public class Program {
                 scan.nextLine();
             }
         }
+        UI.clearScreen();
+        UI.printMatch(match);
     }
 }
