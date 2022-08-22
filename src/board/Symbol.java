@@ -1,6 +1,6 @@
 package board;
 
-public class Symbol {
+public abstract class Symbol {
     protected Position position;
     private Board board;
 
