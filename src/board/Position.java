@@ -1,6 +1,8 @@
 package board;
 
 public class Position {
+
+    // utiliza a posição da matriz ex. [0][1]
     private int row;
     private int column;
 

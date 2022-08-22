@@ -8,6 +8,7 @@ public class Match {
     // inicia partida com um tabuleiro 3x3
     public Match() {
         this.board = new Board(3, 3);
+        test();
     }
 
     public PlayerSymbol[][] getSymbols() {
@@ -18,5 +19,15 @@ public class Match {
             }
         }
         return mat;
+    }
+
+    // coloca o símbolo no tabuleiro, na posição de jogo passada
+    public void placeNewSymbol(char column, int row, PlayerSymbol symbol) {
+        board.placeSymbol(symbol, new GamePosition(column, row).toPosition());
+    }
+
+    public void test() {
+        placeNewSymbol('a', 2, new PlayerSymbol(this.board, Type.O));
+        placeNewSymbol('b', 2, new PlayerSymbol(this.board, Type.X));
     }
 }
