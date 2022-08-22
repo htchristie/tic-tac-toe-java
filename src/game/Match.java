@@ -1,6 +1,7 @@
 package game;
 
 import board.Board;
+import board.Position;
 
 public class Match {
     private Board board;
@@ -8,7 +9,11 @@ public class Match {
     // inicia partida com um tabuleiro 3x3
     public Match() {
         this.board = new Board(3, 3);
-        test();
+        //test();
+    }
+
+    public Board getBoard() {
+        return board;
     }
 
     public PlayerSymbol[][] getSymbols() {
@@ -26,10 +31,16 @@ public class Match {
         board.placeSymbol(symbol, new GamePosition(column, row).toPosition());
     }
 
-    public void test() {
+    // coloca o símbolo no tabuleiro, na posição de jogo passada pelo jogador
+    public void placeNewSymbol(GamePosition position, PlayerSymbol symbol) {
+        Position field = position.toPosition();
+        board.placeSymbol(symbol, field);
+    }
+
+    /*public void test() {
         placeNewSymbol('a', 2, new PlayerSymbol(this.board, Type.O));
         placeNewSymbol('b', 2, new PlayerSymbol(this.board, Type.X));
         placeNewSymbol('c', 2, new PlayerSymbol(this.board, Type.O));
         placeNewSymbol('c', 1, new PlayerSymbol(this.board, Type.X));
-    }
+    }*/
 }
