@@ -11,4 +11,8 @@ public abstract class Symbol {
     protected Board getBoard() {
         return board;
     }
+
+    public Position getPosition() {
+        return position;
+    }
 }

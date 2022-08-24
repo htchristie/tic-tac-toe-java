@@ -3,6 +3,8 @@ package game;
 import board.Position;
 import exceptions.GameException;
 
+import java.util.Objects;
+
 public class GamePosition {
 
     // utiliza posição do tabuleiro do jogo ex. a3
@@ -33,12 +35,25 @@ public class GamePosition {
 
     // transforma posição de matriz em posição do tabuleiro
     protected static GamePosition fromPosition(Position position) {
-        return new GamePosition((char) ('a' + position.getColumn()), 8 - position.getRow());
+        return new GamePosition((char) ('a' + position.getColumn()), 3 - position.getRow());
     }
 
     @Override
     public String toString() {
         return "" + column + row;
         // "" serve pra avisar que o texto deve ser impresso como String (row é int)
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        GamePosition position = (GamePosition) o;
+        return getColumn() == position.getColumn() && getRow() == position.getRow();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getColumn(), getRow());
     }
 }
