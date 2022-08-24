@@ -6,13 +6,13 @@ import board.Position;
 import java.util.*;
 
 public class Match {
-    private Board board;
+    private final Board board;
     private Type currentPlayer;
     private boolean win;
     private boolean draw;
-    private List<String> playerX = new ArrayList<>();
-    private List<String> playerO = new ArrayList<>();
-    List<String[]> winningConditions = new ArrayList<>();
+    private List<GamePosition> playerX = new ArrayList<>();
+    private List<GamePosition> playerO = new ArrayList<>();
+    List<GamePosition[]> winningConditions = new ArrayList<>();
 
     // inicia partida com um tabuleiro 3x3
     public Match() {
@@ -58,12 +58,11 @@ public class Match {
         PlayerSymbol symbol = new PlayerSymbol(this.board, currentPlayer);
         Position field = position.toPosition();
         board.placeSymbol(symbol, field);
-        GamePosition pos = GamePosition.fromPosition(field);
 
         if (currentPlayer == Type.X) {
-            playerX.add(pos.toString());
+            playerX.add(position);
         } else {
-            playerO.add(pos.toString());
+            playerO.add(position);
         }
 
         System.out.println(playerX);
@@ -84,7 +83,7 @@ public class Match {
     }
 
     public boolean checkWin() {
-        for (String[] arr: winningConditions) {
+        for (GamePosition[] arr: winningConditions) {
             if (new HashSet<>(playerX).containsAll(Arrays.asList(arr)) || new HashSet<>(playerO).containsAll(Arrays.asList(arr))) {
                 return true;
             }
@@ -93,21 +92,21 @@ public class Match {
     }
 
     private void setWinningConditions() {
-        String[] mainDiagonal = new String[board.getRows()];
-        String[] secondaryDiagonal = new String[board.getRows()];
+        GamePosition[] mainDiagonal = new GamePosition[board.getRows()];
+        GamePosition[] secondaryDiagonal = new GamePosition[board.getRows()];
 
         // diagonal principal
         for (int i = 0; i < board.getRows(); i++) {
             Position pos1 = (new Position(i, i));
             GamePosition pos2 = GamePosition.fromPosition(pos1);
-            mainDiagonal[i] = pos2.toString();
+            mainDiagonal[i] = pos2;
         }
 
         // diagonal secundária
         for (int i = 0; i < board.getRows(); i++) {
             Position pos1 = (new Position(i, 2 - i));
             GamePosition pos2 = GamePosition.fromPosition(pos1);
-            secondaryDiagonal[i] = pos2.toString();
+            secondaryDiagonal[i] = pos2;
         }
 
         winningConditions.add(mainDiagonal);
