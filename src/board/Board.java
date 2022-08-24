@@ -8,6 +8,7 @@ public class Board {
     private Symbol[][] symbols;
 
     public Board(int rows, int columns) {
+        //não permite a criação de tabuleiros que não sejam 3x3
         if (rows != 3 || columns != 3) {
             throw new BoardException("Board should be a 3x3 grid.");
         }
@@ -21,20 +22,13 @@ public class Board {
         return rows;
     }
 
-    public void setRows(int rows) {
-        this.rows = rows;
-    }
-
     public int getColumns() {
         return columns;
     }
 
-    public void setColumns(int columns) {
-        this.columns = columns;
-    }
-
-    // retorna o que há na casa [row][column]
+    // retorna o que há no campo [row][column]
     public Symbol findSymbol(int row, int column) {
+        //lança uma exceção se a posição não existir
         if (!positionExists(row, column)) {
             throw new BoardException("The position you're trying to access doesn't exist.");
         }
@@ -42,8 +36,9 @@ public class Board {
         return symbols[row][column];
     }
 
-    // retorna o que há na casa [position.getRow()][position.getColumn()]
+    // retorna o que há no campo [position.getRow()][position.getColumn()]
     public Symbol findSymbol(Position position) {
+        //lança uma exceção se a posição não existir
         if (!positionExists(position)) {
             throw new BoardException("The position (" + position + ") doesn't exist.");
         }
@@ -51,8 +46,9 @@ public class Board {
         return symbols[position.getRow()][position.getColumn()];
     }
 
-    // insere símbolo no array symbols[][] e define a posição do símbolo passado
+    // insere símbolo no array symbols[][] e define sua posição
     public void placeSymbol(Symbol symbol, Position position) {
+        //lança uma exceção se o campo já tiver algum símbolo
         if (isThereASymbol(position)) {
             throw new BoardException("The position (" + position + ") is already taken.");
         }
@@ -73,6 +69,7 @@ public class Board {
 
     // checa se a casa na posição position está ocupada
     public boolean isThereASymbol(Position position) {
+        //lança uma exceção se a posição não existir
         if (!positionExists(position)) {
             throw new BoardException("The position (" + position + ") doesn't exist.");
         }

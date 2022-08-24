@@ -7,12 +7,4 @@ public abstract class Symbol {
     public Symbol(Board board) {
         this.board = board;
     }
-
-    protected Board getBoard() {
-        return board;
-    }
-
-    public Position getPosition() {
-        return position;
-    }
 }

@@ -13,6 +13,7 @@ public class Program {
         Scanner scan = new Scanner(System.in);
         Match match = new Match();
 
+        // enquanto não tiver empate nem vitória
         while (!match.isDraw() && !match.isWin()) {
             try {
                 UI.clearScreen();
@@ -23,11 +24,7 @@ public class Program {
                 match.placeNewSymbol(position);
                 System.out.println();
             }
-            catch (GameException e) {
-                System.out.println(e.getMessage());
-                scan.nextLine();
-            }
-            catch (InputMismatchException e) {
+            catch (GameException | InputMismatchException e) {
                 System.out.println(e.getMessage());
                 scan.nextLine();
             }
